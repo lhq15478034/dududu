@@ -26,6 +26,6 @@ public class ControllerExceptionHandler {
     public JsonResult handler(HttpServletResponse response, Exception e) {
         logger.error("统一异常处理", e);
         response.setStatus(HttpStatus.OK.value());
-        return new JsonResult(false, "程序异常！", e.toString());
+        return new JsonResult(false, "程序异常", e.toString());
     }
 }
