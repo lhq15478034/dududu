@@ -70,4 +70,17 @@ public class User implements Serializable {
     public void setLastLoginTime(Date lastLoginTime) {
         this.lastLoginTime = lastLoginTime;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", role=" + role +
+                ", address='" + address + '\'' +
+                ", ip='" + ip + '\'' +
+                ", lastLoginTime=" + lastLoginTime +
+                '}';
+    }
 }
