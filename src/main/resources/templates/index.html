@@ -128,7 +128,7 @@
                             async: true,
                             data: this.loginForm,
                             success: function (data) {
-                                console.log('success:' + JSON.stringify(data));
+                                console.log('jsonresult:' + JSON.stringify(data));
                                 if (data.success) {
                                     window.localStorage.setItem('user', JSON.stringify(data.data.user));
                                     window.location.href = '/api/admin';
@@ -162,7 +162,7 @@
                            async: true,
                            data: this.registerForm,
                            success: function (data) {
-                               console.log('success:' + JSON.stringify(data));
+                               console.log('jsonresult:' + JSON.stringify(data));
                                if (data.success) {
                                    window.localStorage.setItem('user', JSON.stringify(data.data.user));
                                    window.location.href = '/api/admin';
@@ -180,6 +180,7 @@
                    }
                 });
             }
+
         }
     });
 </script>
